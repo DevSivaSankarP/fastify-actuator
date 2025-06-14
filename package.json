@@ -1,6 +1,6 @@
 {
   "name": "fastify-actuator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Fastify plugin that adds a customizable /health endpoint",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
