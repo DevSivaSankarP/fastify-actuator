@@ -79,14 +79,9 @@ async function envEndpointPlugin(
       { prefix: "/actuator" }
     );
   } else {
-    fastify.register(
-      async function (instance) {
-        instance.get("/env", async () => {
-          return envVars;
-        });
-      },
-      { prefix: options.prefix }
-    );
+    fastify.get("/env", async () => {
+      return envVars;
+    });
   }
 }
 
