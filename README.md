@@ -122,7 +122,7 @@ export default {
 ## Changelog
 
 ### 1.1.2
-- Fixed a bug that caused endpoints to be registered with a duplicated prefix (e.g., /actuator/actuator/health). Endpoints now correctly use the configured prefix without repetition.
+- Fixed a bug that caused endpoints to be registered with a duplicated prefix (e.g., /actuator/actuator/health). Endpoints now correctly use the configured prefix without duplication.
 
 ### 1.1.0
 - Added `envEndpoint` for `/env` endpoint to expose merged environment and settings values.
