@@ -20,14 +20,9 @@ async function healthCheckPlugin(
       { prefix: "/actuator" }
     );
   } else {
-    fastify.register(
-      async function (instance) {
-        instance.get("/health", async () => {
-          return { status: "up" };
-        });
-      },
-      { prefix: options.prefix }
-    );
+    fastify.get("/health", async () => {
+      return { status: "up" };
+    });
   }
 }
 
